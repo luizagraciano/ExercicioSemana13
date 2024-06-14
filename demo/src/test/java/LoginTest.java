@@ -38,6 +38,8 @@ public class LoginTest {
 
         //Checar se texto de login aparece
         assertTrue(loginConfirma.contains("You logged into a secure area!"));
+
+        navegador.findElement(By.xpath("/html/body/div[2]/div/div/a")).click();
     }
 
     @AfterSuite
